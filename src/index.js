@@ -61,6 +61,19 @@ class App extends Component {
 
     this.setState({firstCardChosen: true, firstCard: card});
 
+    let card1 = 'Jh';
+    let card2 = 'Js';
+
+    const player1Cards = CardGroup.fromString(card1 + card2);
+    const player2Cards = CardGroup.fromString('JdQd');
+    const board = CardGroup.fromString('7d9dTs');
+
+    const result = OddsCalculator.calculate([player1Cards, player2Cards]);
+
+    let probabilityAmount = result.equities[0].getEquity();
+
+    this.setState({firstHandProbability: probabilityAmount});
+
     console.log("The first card is chosen: ", this.state.firstCardChosen)
 
   }
