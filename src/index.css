@@ -30,12 +30,55 @@ code {
   left: 15px;
 }
 
+.first-top-card-spade {
+  font-size: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 58px;
+  position: relative;
+  left: 15px;
+  bottom: 40px;
+}
+
 .top-club {
   width: 35px;
   height: 35px;
   position: relative;
   left: 0px;
   bottom: -5px;
+}
+
+.top-spade {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 0px;
+  bottom: -5px;
+}
+
+.next-top-card {
+  font-size: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 58px;
+  position: relative;
+  display: inline-block;
+  left: 77px;
+  bottom: 45px;
+}
+
+.next-top-card-spade {
+  font-size: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 58px;
+  position: relative;
+  display: inline-block;
+  left: 77px;
+  bottom: 85px;
 }
 
 #top-card-club {

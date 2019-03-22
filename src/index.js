@@ -4,6 +4,7 @@ import {CardGroup, OddsCalculator} from 'poker-odds-calculator';
 import './index.css';
 //import App from './App';
 import club from './images/club.jpg';
+import spade from './images/spade.jpg';
 import back from './images/back.png';
 import aceclub from './images/aceclub.png';
 import kingclub from './images/kingclub.png';
@@ -91,69 +92,92 @@ class App extends Component {
         }}>
           A<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="king-of-clubs" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "kingclub")
         }}>
           K<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "queenclub")
         }}>
           Q<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "jackclub")
         }}>
           J<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "tenclub")
         }}>
           T<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "nineclub")
         }}>
           9<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "eightclub")
         }}>
           8<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "sevenclub")
         }}>
           7<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "sixclub")
         }}>
           6<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "fiveclub")
         }}>
           5<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "fourclub")
         }}>
           4<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "threeclub")
         }}>
           3<img src={club} alt="club" className="top-club" />
         </div>
-        <div className="top-card" id="top-card-club" onClick={(e) => {
+        <div className="next-top-card" onClick={(e) => {
           this.click(e, "twoclub")
         }}>
           2<img src={club} alt="club" className="top-club" />
         </div>
-
         <br />
-
+        <div className="first-top-card-spade" id="ace-of-spades" onClick={(e) => {
+          this.click(e, "acespade")
+        }}>
+          A<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "kingspade")
+        }}>
+          K<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "queenspade")
+        }}>
+          Q<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "jackspade")
+        }}>
+          J<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "tenspade")
+        }}>
+          T<img src={spade} alt="spade" className="top-spade" />
+        </div>
         <div>
           {this.state.firstHandProbability}
         </div>
