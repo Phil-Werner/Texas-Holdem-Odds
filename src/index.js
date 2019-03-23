@@ -5,6 +5,7 @@ import './index.css';
 //import App from './App';
 import club from './images/club.jpg';
 import spade from './images/spade.jpg';
+import heart from './images/heart.jpg';
 import back from './images/back.png';
 import aceclub from './images/aceclub.png';
 import kingclub from './images/kingclub.png';
@@ -67,7 +68,7 @@ class App extends Component {
 
     const player1Cards = CardGroup.fromString(card1 + card2);
     const player2Cards = CardGroup.fromString('JdQd');
-    const board = CardGroup.fromString('7d9dTs');
+    //const board = CardGroup.fromString('7d9dTs');
 
     const result = OddsCalculator.calculate([player1Cards, player2Cards]);
 
@@ -178,6 +179,112 @@ class App extends Component {
         }}>
           T<img src={spade} alt="spade" className="top-spade" />
         </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "ninespade")
+        }}>
+          9<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "eightspade")
+        }}>
+          8<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "sevenspade")
+        }}>
+          7<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "sixspade")
+        }}>
+          6<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "fivespade")
+        }}>
+          5<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "fourspade")
+        }}>
+          4<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "threespade")
+        }}>
+          3<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="next-top-card-spade" onClick={(e) => {
+          this.click(e, "twospade")
+        }}>
+          2<img src={spade} alt="spade" className="top-spade" />
+        </div>
+        <div className="first-top-card-heart" id="ace-of-hearts" onClick={(e) => {
+          this.click(e, "aceheart")
+        }}>
+          A<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "kingheart")
+        }}>
+          K<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "queenheart")
+        }}>
+          Q<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "jackheart")
+        }}>
+          J<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "tenheart")
+        }}>
+          T<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "nineheart")
+        }}>
+          9<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "eightheart")
+        }}>
+          8<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "sevenheart")
+        }}>
+          7<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "sixheart")
+        }}>
+          6<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "fiveheart")
+        }}>
+          5<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "fourheart")
+        }}>
+          4<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "threeheart")
+        }}>
+          3<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="next-top-card-heart" onClick={(e) => {
+          this.click(e, "twoheart")
+        }}>
+          2<img src={heart} alt="heart" className="top-heart" />
+        </div>
+
         <div>
           {this.state.firstHandProbability}
         </div>
