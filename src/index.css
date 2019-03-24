@@ -52,6 +52,17 @@ code {
   bottom: 80px;
 }
 
+.first-top-card-diamond {
+  font-size: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 58px;
+  position: relative;
+  left: 15px;
+  bottom: 120px;
+}
+
 .top-club {
   width: 35px;
   height: 35px;
@@ -69,6 +80,14 @@ code {
 }
 
 .top-heart {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 0px;
+  bottom: -5px;
+}
+
+.top-diamond {
   width: 35px;
   height: 35px;
   position: relative;
@@ -110,6 +129,18 @@ code {
   display: inline-block;
   left: 77px;
   bottom: 125px;
+}
+
+.next-top-card-diamond {
+  font-size: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 58px;
+  position: relative;
+  display: inline-block;
+  left: 77px;
+  bottom: 165px;
 }
 
 #top-card-club {

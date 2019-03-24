@@ -6,6 +6,7 @@ import './index.css';
 import club from './images/club.jpg';
 import spade from './images/spade.jpg';
 import heart from './images/heart.jpg';
+import diamond from './images/diamond.jpg';
 import back from './images/back.png';
 import aceclub from './images/aceclub.png';
 import kingclub from './images/kingclub.png';
@@ -283,6 +284,71 @@ class App extends Component {
           this.click(e, "twoheart")
         }}>
           2<img src={heart} alt="heart" className="top-heart" />
+        </div>
+        <div className="first-top-card-diamond" id="ace-of-diamonds" onClick={(e) => {
+          this.click(e, "acediamond")
+        }}>
+          A<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "kingdiamond")
+        }}>
+          K<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "queendiamond")
+        }}>
+          Q<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "jackdiamond")
+        }}>
+          J<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "tendiamond")
+        }}>
+          T<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "ninediamond")
+        }}>
+          9<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "eightdiamond")
+        }}>
+          8<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "sevendiamond")
+        }}>
+          7<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "sixdiamond")
+        }}>
+          6<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "fivediamond")
+        }}>
+          5<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "fourdiamond")
+        }}>
+          4<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "threediamond")
+        }}>
+          3<img src={diamond} alt="diamond" className="top-diamond" />
+        </div>
+        <div className="next-top-card-diamond" onClick={(e) => {
+          this.click(e, "twodiamond")
+        }}>
+          2<img src={diamond} alt="diamond" className="top-diamond" />
         </div>
 
         <div>
